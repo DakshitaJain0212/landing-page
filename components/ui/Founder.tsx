@@ -13,7 +13,7 @@ const Founder = () => {
           <div className="lg:pr-12">
             <h2 className="text-5xl font-semibold text-gray-600 mb-6 flex items-center space-x-2">
               <Image src={star} alt="star" width={36} height={36} />
-              <span className="text-customBlue">Meet Our </span> <space/> Founder
+              <span className="text-customBlue">Meet Our </span> {" "} Founder
             </h2>
 
             <p className="text-lg text-gray-600 mb-4">
