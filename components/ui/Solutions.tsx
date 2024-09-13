@@ -11,7 +11,15 @@ import vector from '../../app/asset/icons/Vector.png';
 import Image from 'next/image';
 
 const Solutions = () => {
-  const solutions = [
+
+  interface Solutions {
+    title: string;
+    icon: string;
+    description: string;
+  } 
+
+
+  const solutions: Solutions = [
     {
       title: 'Content Management',
       image: content, 

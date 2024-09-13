@@ -9,10 +9,11 @@ import software from '../../app/asset/icons/uncharted-brands-solid.png'
 import cloud from '../../app/asset/icons/cloud-binary-regular.png'
 import database from '../../app/asset/icons/database-regular.png';
 import vector from '../../app/asset/icons/Vector.png';
+import type { StaticImageData } from 'next/image';
 
 interface Service {
   title: string;
-  icon: string;
+  icon: StaticImageData;
   description: string;
 }
 

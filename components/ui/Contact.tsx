@@ -4,7 +4,7 @@ import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import person from '../../app/asset/person.png'; // Replace with your image path
 import bgImage from '../../app/asset/Background.png'; 
 
-const ContactUs: React.FC = () => {
+const ContactUs = () => {
   return (
     <div className="bg-gray-50 py-12">
          {/* Heading and Subtext Outside Blue Box */}

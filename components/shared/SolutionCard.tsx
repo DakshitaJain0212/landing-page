@@ -2,7 +2,14 @@
 
 import Image from 'next/image';
 
-const SolutionCard = ({ title, image, description }) => {
+interface SolutionsCardProps {
+  title: string;
+  image: string; 
+  description: string;
+} 
+
+
+const SolutionCard = ({ title, image, description }: SolutionsCardProps) => {
     return (
       <div className="max-w-sm bg-gray-100 shadow-md rounded-2xl overflow-hidden border border-grey-600 px-4 py-4">
         <Image
