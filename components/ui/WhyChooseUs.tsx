@@ -9,10 +9,12 @@ import handshake from '../../app/asset/icons/handshake-angle-regular.png'
 import lightbulb from '../../app/asset/icons/lightbulb-gear-regular.png'
 import gear from '../../app/asset/icons/user-gear-regular.png';
 import vector from '../../app/asset/icons/Vector.png';
+import { StaticImageData } from 'next/image';
+
 
 interface Service {
   title: string;
-  icon: string;
+  icon: StaticImageData;
   description: string;
 }
 

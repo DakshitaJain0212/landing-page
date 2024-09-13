@@ -1,11 +1,11 @@
 'use client'
 
 import Image from 'next/image';
-
+import { StaticImageData } from 'next/image';
 
 interface ServiceCardProps {
     title: string;
-    icon: string; 
+    icon: StaticImageData; 
     description: string;
   }
   

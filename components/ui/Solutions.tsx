@@ -7,51 +7,52 @@ import hospital from '../../app/asset/hospital.png'
 import lead from '../../app/asset/lead.png'
 import vehicle from '../../app/asset/vehicle.png'
 import inventory from '../../app/asset/inventory.png'
-import vector from '../../app/asset/icons/Vector.png';
+import vector from '../../app/asset/icons/Vector.png'
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+
+
+// Define the type for each solution
+interface Solution {
+  title: string;
+  image: StaticImageData;
+  description: string;
+}
+
+const solutions: Solution[] = [
+  {
+    title: 'Content Management',
+    image: content, 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+  {
+    title: 'Employee Management',
+    image: employee,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+  {
+    title: 'Vehicle Management',
+    image: vehicle,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+  {
+    title: 'Lead Management',
+    image: lead,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+  {
+    title: 'Inventory Management',
+    image: inventory,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+  {
+    title: 'Hospital Management',
+    image: hospital,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. Lorem ipsum dolor sit amet, consectetu'
+  },
+];
 
 const Solutions = () => {
-
-  interface Solutions {
-    title: string;
-    icon: string;
-    description: string;
-  } 
-
-
-  const solutions: Solutions = [
-    {
-      title: 'Content Management',
-      image: content, 
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-    {
-      title: 'Employee Management',
-      image: employee,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-    {
-      title: 'Vehicle Management',
-      image: vehicle,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-    {
-      title: 'Lead Management',
-      image: lead,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-    {
-      title: 'Inventory Management',
-      image: inventory,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-    {
-      title: 'Hospital Management',
-      image: hospital,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetu'
-    },
-  ];
-
   return (
     <div className="w-full bg-white py-16"> {/* Full-width white background */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,12 +71,10 @@ const Solutions = () => {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-        <button className="bg-white-500 text-black border border-blue-600 py-2 px-4 rounded-md transition duration-300 hover:bg-blue-100 flex items-center">
- <span className="pr-2"> View More </span>
-  <Image src={vector} width={10} height={18} alt="Arrow Icon" />
-</button>
-
-
+          <button className="bg-white-500 text-black border border-blue-600 py-2 px-4 rounded-md transition duration-300 hover:bg-blue-100 flex items-center">
+            <span className="pr-2">View More</span>
+            <Image src={vector} width={10} height={18} alt="Arrow Icon" />
+          </button>
         </div>
       </div>
     </div>

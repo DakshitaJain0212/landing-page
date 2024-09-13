@@ -1,10 +1,11 @@
 'use client'
 
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 
 interface SolutionsCardProps {
   title: string;
-  image: string; 
+  image: StaticImageData; 
   description: string;
 } 
 
