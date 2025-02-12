@@ -9,6 +9,11 @@ interface BlogCardProps {
   description: string;
 }
 
+
+
+
+
+
 const BlogCard = ({ image, title, date, description }: BlogCardProps) => {
   return (
     <div className="max-w-sm bg-gray-100 shadow-md rounded-2xl overflow-hidden border border-grey-600 px-4 py-4">
